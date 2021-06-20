@@ -1,8 +1,7 @@
 from matplotlib import pyplot as plt
 from pytesseract import Output
-import cv2, pytesseract, re, json
+import cv2, pytesseract, re, json, imutils
 import numpy as np
-import imutils
 
 # reading an image
 image = cv2.imread('test.jpeg')
