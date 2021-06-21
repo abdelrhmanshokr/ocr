@@ -1,6 +1,8 @@
 import cv2, re, json, pytesseract
 from pytesseract import Output
 
+# testing a new branch
+
 date_regs = '^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/(19|20)\d\d$'
 barcode_regex = '^\d{12}$'
 three_digit_scratch_code_regex = '^\d{3}$'
