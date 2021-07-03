@@ -65,7 +65,7 @@ four_digit_scratch_code_regex = '^\d{4}$'
 img = cv2.imread('test.jpeg')
 # custom_config = r'--oem 3 --psm 8' # works with the cropped a sharpened image where each part is cropped on its own
 # custom_config = r'--oem 3 --psm 6' # works with the whole image after cropping it using the upove code   
-custom_config = r'--oem 3 --psm 12' # works with the whole image without cropping it  
+custom_config = r'--oem 3 --psm 12' # works with the whole image without cropping it if it's in the proper size
 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) 
 ret, threshimg = cv2.threshold(gray, 0, 255, cv2.THRESH_OTSU | cv2.THRESH_BINARY_INV) 
