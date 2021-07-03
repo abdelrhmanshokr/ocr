@@ -8,7 +8,7 @@ from PIL import Image, ImageFilter, ImageDraw
 import imutils
 
 # 1) crop image so it shows only the card
-read_image = cv2.imread('test.jpeg')
+read_image = cv2.imread('inverse_patch_two.jpeg')
 # resize since image is huge
 resized_image = cv2.resize(read_image, None, fx=0.25, fy=0.25)
 #cropping the strip dimensions
